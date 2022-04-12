@@ -24,7 +24,8 @@ body{
 
 }
 /* без подчеркиваний */
-a {
+
+.link {
     text-decoration: none;
 }
 
@@ -35,6 +36,157 @@ img {
     height: auto;
 }
 
+/* Единый клас section */
+.section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+
+.hang__section {
+    padding-bottom: 0;
+}
+
+/* Интерактивные елементы лого */
+.logo {
+    display: block;
+
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+.logo__header {
+    padding-top: 24px;
+    padding-bottom: 25px; 
+}
+
+.logo__footer {
+    margin-bottom: 20px;
+}
+
+.logo--dark {
+    color: var(--title-text-color);
+}
+
+.logo--light {
+    color: var(--primary-white-color);
+}
+
+/* Интерактивные елементы ссылки */
+
+.nav__link:hover,
+.nav__link:focus,
+.contacts__link:hover,
+.contacts__link:focus {
+    color: var(--accent-color);
+}
+
+.nav__link {
+    color: var(--title-text-color);
+    transition: color 250ms var(--kubik-rubik);
+}
+
+.contacts__link {
+    color: var(--primare-text-color);
+    transition: color 250ms var(--kubik-rubik);
+}
+
+.nav__link,
+.contacts__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav__list .nav__link.curent {
+    color: var(--accent-color);  
+}
+
+/*Шапка профиля */
+
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+
+}
+
+.curent::after {
+    content: "";
+    position:absolute;
+    left: 0;
+    bottom: -1px;
+
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+}
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contacts__icon:hover,
+.contacts__icon:focus {
+    fill: currentColor;
+}
+
+.contacts__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
+
+.contacts__item +.contacts__item {
+margin-left: 50px;
+}
+
+
+/* -------- Не форматоване---------- */
+
 /* ---убиралки обводок при фокусе---*/
 
 input, textarea {outline:none;}
@@ -44,73 +196,10 @@ textarea {resize:none;}
 textarea {resize:vertical;}
 textarea {resize:horizontal;}
 
-/* Единый клас section */
-.section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-}
-
-.section.hang {
-    padding-bottom: 0;
-}
 
 
-/* Интерактивные елементы лого */
-.logo,
-.logo-footer {
-    display: block;
 
-    color: var(--title-text-color);
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-}
-.logo {
-    padding-top: 24px;
-    padding-bottom: 25px; 
-}
 
-.logo-footer {
-    color: var(--primary-white-color);
-    margin-bottom: 20px;
-}
-
-.logo-first {
-    color: var(--accent-color);
-}
-
-/* Интерактивные елементы ссылки */
-
-.header-link:hover,
-.header-link:focus,
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--accent-color);
-}
-
-.header-link {
-    color: var(--title-text-color);
-    transition: color 250ms var(--kubik-rubik);
-}
-
-.contact-link {
-    color: var(--primare-text-color);
-    transition: color 250ms var(--kubik-rubik);
-}
-
-.header-link,
-.contact-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-
-.header-list .header-link.curent {
-    color: var(--accent-color);  
-}
 
 
 /* Интерактивные елементы кнопки*/
@@ -360,7 +449,7 @@ textarea {
 
 .hero-form-link {
     color: var(--accent-color);
-    text-decoration: underline;
+    
 }
 
 .hero-form-icon-check {
@@ -393,84 +482,6 @@ textarea {
 }
    */
 
-/*Шапка профиля */
-
-.header {
-    border-bottom: 1px solid #ECECEC;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
-.header-nav {
-    display: flex;
-    align-items: center;
-}
-
-.header-list {
-    display: flex;
-    margin-left: 93px;
-}
-
-.header-item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.header-item {
-    position: relative;
-}
-
-.curent::after {
-    content: "";
-    position:absolute;
-    left: 0;
-    bottom: -1px;
-
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-}
-
-.header-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
-
-}
-
-.header-contacts {
-    display: flex;
-    margin-left: auto;
-
-}
-
-.header-icon {
-    fill: currentColor;
-    margin-right: 10px;
-}
-
-.header-icon:hover,
-.header-icon:focus {
-    fill: currentColor;
-}
-
-.contact-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: currentColor;
-}
-
-.header-contacts-item +.header-contacts-item {
-margin-left: 50px;
-}
 
 /* Герой */
 
