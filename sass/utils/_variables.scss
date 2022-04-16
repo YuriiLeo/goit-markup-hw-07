@@ -1,15 +1,19 @@
 :root {
-    $primareTextColor: #757575;
-    $titleTextColor: #212121;
-    $accentColor: #2196F3;
-    $secondAccentColorBtn: #188CE8;
-    $primaryWhiteColor: #FFFFFF;
-    $backgroundFirst: #FFFFFF;
-    $backgroundSecond: #2F303A;
-    $backgroundThird: #F5F4FA;
-    $colorIcon: #AFB1B8;
-    $boxShadowColor: rgba(0, 0, 0, 0.15);
-    $backDropHero: rgba(0, 0, 0, 0.2);
-    $kubikRubik: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    --primare-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --second-accent-color-btn: #188CE8;
+    --primary-white-color: #FFFFFF;
+    --background-first: #FFFFFF;
+    --background-second: #2F303A;
+    --background-third: #F5F4FA;
+    --background-overlay: rgba(33, 150, 243, 0.9);
+    --color-icon: #AFB1B8;
+    --box-shadow-color: rgba(0, 0, 0, 0.15);
+    --back-drop-hero: rgba(0, 0, 0, 0.2);
+    --grey-color: rgba(255, 255, 255, 0.6);
+    --kubik-rubik: cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+
+    
