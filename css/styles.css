@@ -1,15 +1,5 @@
 /* Color */
-:root {
-    --primare-text-color: #757575;
-    --title-text-color: #212121;
-    --accent-color: #2196F3;
-    --primary-white-color: #FFFFFF;
-    --background-first: #FFFFFF;
-    --background-second: #2F303A;
-    --background-third: #F5F4FA;
-    --color-icon: #AFB1B8;
-    --kubik-rubik: cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
     
 body{
     font-family: Roboto, sans-serif;
@@ -213,7 +203,7 @@ margin-left: 50px;
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     cursor: pointer;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 4px 4px $boxShadowColor;
     border-radius: 4px;
     
     outline: transparent;
@@ -252,7 +242,7 @@ margin-left: 50px;
  
 .btn:hover,
 .btn:focus {
-    background-color: #188CE8;
+    background-color: $secondAccentColorBtn;
     box-shadow: 
     0px 3px 1px rgba(0, 0, 0, 0.1), 
     0px 1px 2px rgba(0, 0, 0, 0.08), 
@@ -493,7 +483,7 @@ display: block;
     left:0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $backDropHero;
     transition: opacity 250ms var(--kubik-rubik),
     visibility 250ms var(--kubik-rubik);
 
