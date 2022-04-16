@@ -1,0 +1,51 @@
+.hang__section {
+    padding-bottom: 0;
+}
+.hang__item {
+    width: calc((100%-90)/4);
+    margin-right: 30px;
+}
+
+.hang-item:last-child {
+    margin-right: 0;
+}
+
+.hang__thumb {
+    padding: 0;
+    border: none;
+    background-color: var(--background-third);
+    height: 120px;
+    width: 270px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--title-text-color);
+
+}
+.hang__icon {
+    width: 70px;
+    height: 70px;
+
+}
+
+.hang__subtitle {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.hang__text {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}

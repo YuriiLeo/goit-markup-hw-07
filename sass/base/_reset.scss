@@ -1,0 +1,15 @@
+/* без точек */
+.list {
+    display: flex; 
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+/* без подчеркиваний */
+
+.link {
+    text-decoration: none;
+    outline: transparent;
+}

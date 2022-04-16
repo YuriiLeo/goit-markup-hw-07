@@ -1,0 +1,41 @@
+.cliens__list {
+    border: none;
+    justify-content: center;
+}
+
+.cliens__item {
+    width: calc((100%-150)/6);
+    margin-right: 30px;
+}
+
+.cliens__item:last-child {
+    margin-right: 0;
+}
+
+.cliens__link {
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-icon);
+    border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: color 250ms var(--kubik-rubik),
+    border 250ms var(--kubik-rubik);
+    
+}
+
+.cliens__link:hover,
+.cliens__link:focus {
+    color: var(--accent-color);
+    border:  1px solid var(--accent-color);
+}
+
+.cliens__icon {
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
+}
