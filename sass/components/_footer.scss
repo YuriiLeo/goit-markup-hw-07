@@ -18,9 +18,7 @@
 }
 
 .adress__link {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fonts14;
 
     color: var(--grey-color);
     transition: color 250ms var(--kubik-rubik);
@@ -50,10 +48,7 @@
     margin: 0;
     color: var(--primary-white-color);
     font-family: var( --main-font) ;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
+    @include fonts14(700, 14px, 1.14);
     text-transform: uppercase;
     
 }

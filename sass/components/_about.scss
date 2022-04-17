@@ -31,12 +31,8 @@
 
 .about__text {
     margin: 0;
-    
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
+    @include fonts14(700, 14px, 1.71);
     text-align: center;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
     
     color: var(--primary-white-color)

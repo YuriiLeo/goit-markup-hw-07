@@ -17,11 +17,8 @@ display: block;
 }
 
 .form__title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include fonts(700, 20px, 1.15, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     
     color: var(--title-text-color);
     margin: 0;
@@ -66,9 +63,7 @@ display: block;
 
 
 .form__label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include fonts(700, 12px, 1.17, 0.01em);
     
     color: var(--primare-text-color);
 }
@@ -101,9 +96,7 @@ display: block;
     height: 117px;
     margin-top: 4px;
     margin-bottom: 20px;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    @include fonts14(null,14px, 1.14, 0.01em);
     color: var(--primare-text-color);
     padding: 12px 14px;
 
@@ -137,9 +130,7 @@ display: block;
 
 
 .form__policy {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include fonts14;
     padding-left: 35px;
     
     color: var(--primare-text-color);

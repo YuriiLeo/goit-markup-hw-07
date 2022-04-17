@@ -56,8 +56,8 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .is-hidden {
@@ -79,8 +79,9 @@ img {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
-  box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
+  font-family: inherit;
+  box-shadow: 0px 4px 4px var(--box-shadow-color);
   outline: transparent;
   border: 1px solid transparent;
   transition: background-color 250ms var(--kubik-rubik), box-shadow 250ms var(--kubik-rubik);
@@ -88,7 +89,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  font-family: inherit;
   padding: 10px 28px;
   position: relative;
   display: flex;
@@ -127,6 +127,14 @@ img {
   letter-spacing: 0.03em;
 }
 
+.logo--dark {
+  color: var(--title-text-color);
+}
+
+.logo--light {
+  color: var(--primary-white-color);
+}
+
 .logo__header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -134,14 +142,6 @@ img {
 
 .logo__footer {
   margin-bottom: 20px;
-}
-
-.logo--dark {
-  color: var(--title-text-color);
-}
-
-.logo--light {
-  color: var(--primary-white-color);
 }
 
 .nav__link {
@@ -261,8 +261,8 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--title-text-color);
   margin: 0;
   padding: 0;
@@ -299,6 +299,7 @@ img {
 }
 
 .form__label {
+  font-weight: 700;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -398,8 +399,8 @@ img {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -536,9 +537,9 @@ img {
   margin: 0;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
@@ -576,16 +577,16 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team__text {
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .social__list {
@@ -727,7 +728,7 @@ img {
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -787,6 +788,7 @@ img {
   background-color: var(--background-third);
   cursor: pointer;
   border-radius: 4px;
+  font-family: inherit;
   display: inline-block;
   text-align: center;
   border: 1px solid transparent;
@@ -795,7 +797,6 @@ img {
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  font-family: inherit;
   padding: 6px 22px;
   min-width: 73px;
 }
@@ -889,6 +890,7 @@ img {
   display: flex;
   padding: 63px 24px 63px 24px;
   margin: 0;
+  font-weight: 700;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;

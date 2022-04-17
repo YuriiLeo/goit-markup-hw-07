@@ -14,10 +14,8 @@
 
 
 .portfolio__btn {
-    color: var(--title-text-color);
-    background-color: var(--background-third);
-    cursor: pointer;
-    border-radius: 4px;
+    @include btn(var(--title-text-color),var(--background-third));
+
     display: inline-block;
     text-align: center;
     @include border(transparent);
@@ -25,11 +23,7 @@
     background-color 250ms var(--kubik-rubik),
     box-shadow 250ms var(--kubik-rubik);
 
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    font-family: inherit; 
+    @include fonts16(500, 16px, 1.62, 0.03em);
     padding: 6px 22px;
     min-width: 73px;
 

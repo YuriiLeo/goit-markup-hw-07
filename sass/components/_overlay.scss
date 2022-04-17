@@ -23,10 +23,7 @@
 
     padding: 63px 24px 63px 24px;
     margin: 0;
-    
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
+    @include fonts(700, 18px, 1.56, 0.03em);
     
     color: var(--primary-white-color);
     background: var(--background-overlay);

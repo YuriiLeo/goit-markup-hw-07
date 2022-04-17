@@ -3,10 +3,15 @@
 
     color: var(--accent-color);
     font-family: var(--secondary-font);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
+    @include fonts(700, 26px, 1.2, 0.03em);
+
+    &--dark {
+    color: var(--title-text-color);
+    }
+
+    &--light {
+    color: var(--primary-white-color);
+    }
 }
 .logo__header {
     padding-top: 24px;
@@ -15,12 +20,4 @@
 
 .logo__footer {
     margin-bottom: 20px;
-}
-
-.logo--dark {
-    color: var(--title-text-color);
-}
-
-.logo--light {
-    color: var(--primary-white-color);
 }

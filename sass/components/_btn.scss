@@ -1,20 +1,13 @@
 .btn{
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    cursor: pointer;
+    @include btn(var(--primary-white-color),var(--accent-color));
+
     box-shadow: 0px 4px 4px var(--box-shadow-color);
-    border-radius: 4px;
     
     outline: transparent;
     @include border(transparent);
     transition: background-color 250ms var(--kubik-rubik),
     box-shadow 250ms var(--kubik-rubik);
-   
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    font-family: inherit;
+    @include fonts16(700, 16px, 1.88, 0.06em);
     padding: 10px 28px;
     position: relative;
 
