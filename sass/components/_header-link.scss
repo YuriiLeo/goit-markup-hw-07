@@ -6,6 +6,11 @@
     color: var(--title-text-color);
     transition: color 250ms var(--kubik-rubik);
 
+     &:hover,
+     &:focus{
+    color: var(--accent-color);
+}
+
 }
 .contacts__link {
     display: block;
@@ -18,14 +23,12 @@
 
     color: var(--primare-text-color);
     transition: color 250ms var(--kubik-rubik);
-}
-.nav__link:hover,
-.nav__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
-    color: var(--accent-color);
-}
 
+    &:hover,
+    &:focus{
+    color: var(--accent-color);
+} 
+}
 
 .nav__link,
 .contacts__link {
@@ -33,8 +36,4 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-}
-
-.nav__list .nav__link.curent {
-    color: var(--accent-color);  
 }

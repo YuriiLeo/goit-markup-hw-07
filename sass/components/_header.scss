@@ -14,14 +14,18 @@
 
 .nav__list {
     margin-left: 93px;
-}
 
-.nav__item:not(:last-child) {
-    margin-right: 50px;
+    & .nav__link.curent {
+    color: var(--accent-color);  
+}
 }
 
 .nav__item {
     position: relative;
+
+    &:not(:last-child) {
+    margin-right: 50px;
+}
 }
 
 .curent::after {
@@ -46,11 +50,11 @@
 .contacts__icon {
     fill: currentColor;
     margin-right: 10px;
-}
 
-.contacts__icon:hover,
-.contacts__icon:focus {
+    &:hover,
+    &:focus {
     fill: currentColor;
+}
 }
 
 .contacts__item +.contacts__item {

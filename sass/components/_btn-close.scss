@@ -19,15 +19,16 @@
    
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: fill 250ms var(--kubik-rubik);
-} 
-
-.btn-close:hover,
-.btn-close:focus {
+    &:hover,
+    &:focus {
     fill: var(--accent-color);
 }
-
-.btn-close__icon {
+    &__icon {
     width: 18px; 
     height: 18px;
 
 }
+} 
+
+
+

@@ -24,13 +24,12 @@
     border-radius: 4px;
     transition: color 250ms var(--kubik-rubik),
     border 250ms var(--kubik-rubik);
-    
-}
 
-.cliens__link:hover,
-.cliens__link:focus {
+     &:hover,
+     &:focus {
     color: var(--accent-color);
     border:  1px solid var(--accent-color);
+}
 }
 
 .cliens__icon {

@@ -93,6 +93,11 @@ img {
   display: flex;
 }
 
+.btn:hover, .btn:focus {
+  background-color: var(--second-accent-color-btn);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .hero__btn {
   padding: 10px 32px;
   margin-right: auto;
@@ -109,12 +114,6 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
-}
-
-.btn:hover,
-.btn:focus {
-  background-color: var(--second-accent-color-btn);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -152,6 +151,10 @@ img {
   transition: color 250ms var(--kubik-rubik);
 }
 
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
+
 .contacts__link {
   display: block;
   padding-top: 32px;
@@ -164,10 +167,7 @@ img {
   transition: color 250ms var(--kubik-rubik);
 }
 
-.nav__link:hover,
-.nav__link:focus,
-.contacts__link:hover,
-.contacts__link:focus {
+.contacts__link:hover, .contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -177,10 +177,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.nav__list .nav__link.curent {
-  color: var(--accent-color);
 }
 
 .header {
@@ -201,12 +197,16 @@ img {
   margin-left: 93px;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+.nav__list .nav__link.curent {
+  color: var(--accent-color);
 }
 
 .nav__item {
   position: relative;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .curent::after {
@@ -231,8 +231,7 @@ img {
   margin-right: 10px;
 }
 
-.contacts__icon:hover,
-.contacts__icon:focus {
+.contacts__icon:hover, .contacts__icon:focus {
   fill: currentColor;
 }
 
@@ -289,10 +288,13 @@ img {
   transition: border 250ms var(--kubik-rubik);
 }
 
-.form__input:hover,
-.form__input:focus,
-.form__input:checked {
+.form__input:hover, .form__input:focus, .form__input:checked {
   border: 1px solid var(--accent-color);
+}
+
+.form__input:hover ~ .form__icon--sign,
+.form__input:focus ~ .form__icon--sign {
+  fill: var(--accent-color);
 }
 
 .form__label {
@@ -317,25 +319,12 @@ img {
   transition: fill 250ms var(--kubik-rubik);
 }
 
-.form__input:hover ~ .form__icon--sign,
-.form__input:focus ~ .form__icon--sign {
-  fill: var(--accent-color);
-}
-
 .form__icon--check {
   width: 16px;
   height: 15px;
   border: 2px solid #2a2a2a;
   border-radius: 4px;
   fill: var(--background-first);
-}
-
-.form__checkbox:checked ~ .form__icon--check {
-  fill: var(--accent-color);
-  border-color: var(--accent-color);
-  background-color: var(--accent-color);
-  background-origin: border-box;
-  background-size: contain;
 }
 
 .form__comment {
@@ -363,6 +352,14 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.form__checkbox:checked ~ .form__icon--check {
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-origin: border-box;
+  background-size: contain;
 }
 
 .form__policy {
@@ -446,8 +443,7 @@ img {
   transition: fill 250ms var(--kubik-rubik);
 }
 
-.btn-close:hover,
-.btn-close:focus {
+.btn-close:hover, .btn-close:focus {
   fill: var(--accent-color);
 }
 
@@ -597,6 +593,10 @@ img {
   justify-content: center;
 }
 
+.social__list--footer {
+  margin-top: 20px;
+}
+
 .social__item {
   margin-right: 10px;
 }
@@ -617,10 +617,15 @@ img {
   transition: color 250ms var(--kubik-rubik), background-color 250ms var(--kubik-rubik);
 }
 
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+}
+
+.social__link--dark-bc {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms var(--kubik-rubik), background-color 250ms var(--kubik-rubik);
 }
 
 .social__icon {
@@ -629,19 +634,8 @@ img {
   fill: currentColor;
 }
 
-.social__icon:hover,
-.social__icon:focus {
+.social__icon:hover, .social__icon:focus {
   fill: currentColor;
-}
-
-.social__list--footer {
-  margin-top: 20px;
-}
-
-.social__link--dark-bc {
-  color: var(--primary-white-color);
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: color 250ms var(--kubik-rubik), background-color 250ms var(--kubik-rubik);
 }
 
 .cliens__list {
@@ -671,8 +665,7 @@ img {
   transition: color 250ms var(--kubik-rubik), border 250ms var(--kubik-rubik);
 }
 
-.cliens__link:hover,
-.cliens__link:focus {
+.cliens__link:hover, .cliens__link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
@@ -714,8 +707,7 @@ img {
   color: var(--primary-white-color);
 }
 
-.adress__link:hover,
-.adress__link:focus {
+.adress__link:hover, .adress__link:focus {
   color: var(--accent-color);
 }
 
@@ -807,8 +799,7 @@ img {
   min-width: 73px;
 }
 
-.portfolio__btn:hover,
-.portfolio__btn:focus {
+.portfolio__btn:hover, .portfolio__btn:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -824,22 +815,27 @@ img {
   margin-bottom: 30px;
 }
 
-.projects__link {
-  display: block;
-  transition: box-shadow 250ms var(--kubik-rubik);
-}
-
-.projects__link:hover,
-.projects__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .projects__item:nth-child(3n) {
   margin-right: 0;
 }
 
 .projects__item:nth-last-child(-n+3) {
   margin-bottom: 0;
+}
+
+.projects__link {
+  display: block;
+  transition: box-shadow 250ms var(--kubik-rubik);
+}
+
+.projects__link:hover, .projects__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects__link:hover .projects__overlay,
+.projects__link:focus .projects__overlay {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .projects__content {
@@ -866,12 +862,6 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-}
-
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .projects__thumb {

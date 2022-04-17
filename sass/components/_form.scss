@@ -52,13 +52,18 @@ display: block;
     border-radius: 4px;
 
     transition: border 250ms var(--kubik-rubik);
+     &:hover,
+     &:focus,
+     &:checked {
+       border: 1px solid var(--accent-color);
+    }
+    &:hover ~ .form__icon--sign,
+    &:focus ~ .form__icon--sign  {
+    fill: var(--accent-color);
+    }
 }
 
-.form__input:hover,
-.form__input:focus,
-.form__input:checked {
-    border: 1px solid var(--accent-color);
-}
+
 
 .form__label {
     font-size: 12px;
@@ -77,37 +82,20 @@ display: block;
 
     display: inline-block;
     
-}
-
-.form__icon--sign {
+    &--sign {
     width: 18px;
     height: 18px;
     fill: var(--title-text-color);
     transition: fill 250ms var(--kubik-rubik);
 }
-
-
-.form__input:hover ~ .form__icon--sign,
-.form__input:focus ~ .form__icon--sign  {
-    fill: var(--accent-color);
-}
-
-.form__icon--check {
+    &--check {
     width: 16px;
     height: 15px;
     border: 2px solid #2a2a2a;
     border-radius: 4px;
     fill: var(--background-first)
 }
-
-.form__checkbox:checked ~ .form__icon--check {
-    fill: var(--accent-color);
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
-    background-origin: border-box; 
-    background-size: contain;
 }
-
 
 .form__comment {
     height: 117px;
@@ -120,12 +108,11 @@ display: block;
     padding: 12px 14px;
 
     resize: none;
-    
-}
 
-.form__comment::placeholder {
+    &::placeholder {
     color: rgba(117, 117, 117, 0.5);
 
+}
 }
 
 .form__checkbox {
@@ -137,7 +124,17 @@ display: block;
     padding: 0;
     clip:rect(0 0 0 0);
     overflow: hidden;
+
+    &:checked ~ .form__icon--check {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-origin: border-box; 
+    background-size: contain;
 }
+}
+
+
 
 .form__policy {
     font-size: 14px;
