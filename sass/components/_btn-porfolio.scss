@@ -20,7 +20,7 @@
     border-radius: 4px;
     display: inline-block;
     text-align: center;
-    border: 1px solid transparent;
+    @include border(transparent);
     transition: color 250ms var(--kubik-rubik),
     background-color 250ms var(--kubik-rubik),
     box-shadow 250ms var(--kubik-rubik);

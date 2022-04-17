@@ -6,7 +6,7 @@
     border-radius: 4px;
     
     outline: transparent;
-    border: 1px solid transparent;
+    @include border(transparent);
     transition: background-color 250ms var(--kubik-rubik),
     box-shadow 250ms var(--kubik-rubik);
    
