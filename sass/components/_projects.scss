@@ -43,14 +43,12 @@
 
 .projects__title {
     margin-bottom: 4px;
-    margin-top: 0;
 
     color: var(--title-text-color);
     @include fonts(700, 18px, 2, 0.06em);
 }
 
 .projects__text {
-    margin-top: 0;
     margin-bottom: 0;
 
     color: var(--primare-text-color);

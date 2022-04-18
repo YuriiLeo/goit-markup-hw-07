@@ -63,7 +63,7 @@ display: block;
 
 
 .form__label {
-    @include fonts(700, 12px, 1.17, 0.01em);
+    @include fonts(400, 12px, 1.17, 0.01em);
     
     color: var(--primare-text-color);
 }

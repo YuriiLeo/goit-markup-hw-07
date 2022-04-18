@@ -11,9 +11,7 @@
 
     background-color: var(--background-first);
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
 
     border-radius: 50%;
    

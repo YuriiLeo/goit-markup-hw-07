@@ -15,9 +15,7 @@
 .cliens__link {
     width: 170px;
     height: 92px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend %flex;
     color: var(--color-icon);
     @include border(var(--border-grey-color));
     box-sizing: border-box;

@@ -23,7 +23,7 @@
 
     padding: 63px 24px 63px 24px;
     margin: 0;
-    @include fonts(700, 18px, 1.56, 0.03em);
+    @include fonts(400, 18px, 1.56, 0.03em);
     
     color: var(--primary-white-color);
     background: var(--background-overlay);
